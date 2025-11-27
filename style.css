@@ -1,1 +1,243 @@
+/* Importação de fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Estilos Gerais (Reset e Base) --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    color: #1e8449; /* Verde escuro */
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* --- Botões --- */
+
+.botao-principal, .botao-secundario {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-principal {
+    background-color: #27ae60; /* Verde vibrante */
+    color: white;
+    border: 2px solid #27ae60;
+}
+
+.botao-principal:hover {
+    background-color: #219d55;
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    background-color: transparent;
+    color: #1e8449; /* Verde escuro */
+    border: 2px solid #1e8449;
+}
+
+.botao-secundario:hover {
+    background-color: #1e8449;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- Cabeçalho (Header) --- */
+
+.cabecalho {
+    background-color: #1e8449; /* Verde escuro */
+    color: white;
+    padding: 15px 0;
+    border-bottom: 5px solid #27ae60;
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    color: white;
+    margin: 0;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navegacao ul li {
+    margin-left: 20px;
+}
+
+.menu-navegacao ul li a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.menu-navegacao ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Seção Principal (Hero) --- */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('canyon-arapoti-placeholder.jpg') no-repeat center center/cover; /* Imagem de fundo deve ser adicionada */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* --- Seção de Destaques (Cartões) --- */
+
+.destaques {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.cartoes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cartao h3 {
+    color: #27ae60;
+}
+
+/* --- Seção de Cultura --- */
+
+.cultura {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #e8f5e9; /* Verde bem claro */
+}
+
+.cultura p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* --- Rodapé (Footer) --- */
+
+.rodape {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
+
+/* --- Responsividade Básica --- */
+@media (max-width: 768px) {
+    .cabecalho .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-navegacao ul {
+        margin-top: 10px;
+    }
+
+    .menu-navegacao ul li {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
 
